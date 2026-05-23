@@ -4,6 +4,10 @@ feishu_url: ""
 last_synced: ""
 ---
 
+> **配套资源**  
+> 源码仓库 · [github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)  
+> 在线阅读 · [inferloop.dev/claude-skill](https://inferloop.dev/claude-skill)
+
 ## 一个团队的真实困境
 
 我之前观察过一个五人前端团队。他们的代码评审有个固定流程：每个 PR 都要至少两个人 review，按团队规范走一遍。规范文档放在 Confluence 上，写得很认真，二十几页。

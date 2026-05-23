@@ -1,5 +1,8 @@
 # AI Skill 实战权威指南
 
+> 在线阅读 · [inferloop.dev/claude-skill](https://inferloop.dev/claude-skill)  
+> 所有书目 · [inferloop.dev](https://inferloop.dev)
+
 > 以 Claude Code Skill 为实战载体，系统讲解 AI 能力封装的工程化方法论。
 
 ## 这本书解决什么问题
@@ -48,3 +51,18 @@ playground/     # 读者练习区
 - 运行环境：Claude Code
 - 脚本语言：TypeScript（通过 tsx 直接执行）
 - 规范标准：[Agent Skills](https://agentskills.io) 开放规范
+
+
+## 相关书
+
+来自同一作者的其他书:
+
+- [《Hermes Agent 源码解读》](https://inferloop.dev/hermes-agent)
+- [《LLM Infra 工程实战》](https://inferloop.dev/llm-infra)
+- [《AI Token 中转站实战》](https://inferloop.dev/llm-gateway)
+- [《Agent Memory 工程实战》](https://inferloop.dev/claude-mem)
+- [《百万级 AI Agent 平台架构》](https://inferloop.dev/enterprise-agent)
+- [《OpenClaw 源码解析》](https://inferloop.dev/openclaw)
+- [《Transformer 教学》](https://inferloop.dev/transformer)
+- [《Claude 插件官方指南》](https://inferloop.dev/claude-plugins)
+- [《自己动手写 AI Agent》](https://inferloop.dev/ling-agent)
