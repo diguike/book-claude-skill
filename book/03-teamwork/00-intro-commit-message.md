@@ -74,3 +74,9 @@ refactor(api): extract validation middleware
 这些问题在个人 Skill 阶段不存在。一旦 Skill 变成团队共享的，它就从一个文件变成了一项制度。
 
 接下来三章，我们聊的就是这件事：当 Skill 成为团队协作的一部分，你需要哪些机制来让它健康地活下去。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

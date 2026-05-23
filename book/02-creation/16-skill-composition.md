@@ -90,3 +90,9 @@ code-review 发现了一个 Critical 问题：一个函数在并发场景下有�
 **数据传递太复杂**——如果 A 需要把 10 个字段传给 B，B 还需要把 3 个字段传回 A，再由 A 决定下一步——这不是两个 Skill，这是一个 Skill 被错误地拆成了两个。
 
 最终判断标准：用户说一句话能不能把事办了？如果用户需要手动串联多个 Skill（"先跑 review，再把结果复制给 fix，再跑 test"），那你的编排设计有问题。好的组合对用户是透明的。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

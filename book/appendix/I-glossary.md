@@ -25,3 +25,9 @@
 | Three-dimensional Metrics | 三维指标 | `pass_rate x tokens x time` 的评测模型，平衡质量、成本和速度 | 第 4 章 |
 | Transcript | 执行日志 | AI 完成任务的完整过程记录，包含工具调用和中间输出，用于调试 Skill | 第 15 章 |
 | Trigger Evaluation | 触发评测 | 用 20 条查询（10 条应触发 + 10 条不应触发）测试 description 的准确率 | 第 6 章 |
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

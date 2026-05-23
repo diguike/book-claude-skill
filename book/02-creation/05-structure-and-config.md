@@ -158,3 +158,9 @@ description: "审查代码的质量、安全性和可维护性。当用户说're
 15 行。没有 `allowed-tools`，没有 `context: fork`，没有花哨的参数传递。这就是 v1-minimal——能用，但还有很大的改进空间。对应快照目录 `skills/code-review-snapshots/v1-minimal/`。
 
 后续章节会逐步加入参考文件、工具授权、结构化输出，把它从"能用"变成"好用"。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

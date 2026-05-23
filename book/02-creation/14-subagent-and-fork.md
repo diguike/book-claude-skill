@@ -117,3 +117,9 @@ code-review v9，加入子代理并行审查能力。
 子代理不是免费的。每个子代理都要消耗独立的上下文窗口和 token。如果任务本身不大（改了 5 个文件），串行处理就够了，别为了用而用。
 
 判断标准：如果你发现一个 Skill 的上下文经常接近满载，或者任务天然可以按模块切分，子代理才值得引入。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

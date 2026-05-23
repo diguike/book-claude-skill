@@ -46,3 +46,9 @@ PR 审查 Skill 变更时，逐项检查。
 - [ ] PR 描述说明了修改原因和影响
 - [ ] 如果是新增 Skill，有 Owner 指定
 - [ ] 如果修改了输出格式，通知了依赖该格式的下游脚本
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

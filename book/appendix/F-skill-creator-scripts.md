@@ -109,3 +109,9 @@ python -m scripts.package_skill path/to/skill/ --output my-skill.skill
 ```
 
 排除项：`__pycache__`、`node_modules`、`*.pyc`、`.DS_Store`、`evals/`
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

@@ -96,3 +96,9 @@ Delta 是 0.60——这个 Skill 的价值很明确。AI 不是不会检查文�
 这正是第 4 章讲过的核心概念。但在第 4 章我们只讲了思维模型，没有展开方法论。
 
 接下来两章，我们要把评测这件事彻底讲透：怎么设计评测用例、怎么评判输出质量、怎么把评测集成到 CI 让每次 Skill 修改都自动验证。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

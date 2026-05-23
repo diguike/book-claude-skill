@@ -128,3 +128,9 @@ allowed-tools: "Bash(gh pr *)"
 用户现在只需要说"review PR 142"，Skill 自动拉取 diff，AI 直接开始审查。从"能用"到"顺手"，差的就是这几行动态注入。
 
 对应快照目录 `skills/code-review-snapshots/v3-dynamic/`。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

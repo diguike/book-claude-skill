@@ -182,3 +182,9 @@ description: "审查代码中的安全漏洞。当用户提到'安全审查'、'
 经验法则：如果你在一个月内用了同一个 prompt 三次以上，而且每次都在重复调同样的约束，那就做成 Skill。否则别浪费时间。
 
 Skill 是有维护成本的。每创建一个，你就多了一个需要 review、需要 eval、需要跟着业务变化更新的东西。不要因为"可以做"就去做。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

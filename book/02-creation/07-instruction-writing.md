@@ -124,3 +124,9 @@ description: "审查代码的质量、安全性和可维护性。当用户说're
 对比 v1，变化不大——加了输出模板、严重度定义、几条带 "因为" 的审查规则。但 AI 的输出质量会有明显提升：格式稳定、优先级清晰、不再胡乱标 Critical。
 
 对应快照目录 `skills/code-review-snapshots/v2-structured/`。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

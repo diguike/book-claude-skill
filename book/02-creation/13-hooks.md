@@ -150,3 +150,9 @@ SKILL.md body 中，原来的"审查后处理"章节可以简化：
 - **v8**（第 13 章）：后处理从指令移到 hook，执行确定性从"大概率"变成"必定"
 
 这个演进过程本身就是一个通用模式：先让 AI 手动做，观察哪些步骤是固定的，然后把固定步骤抽成脚本，最后用 hook 保证脚本一定执行。不需要一步到位，先跑起来再优化。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

@@ -103,3 +103,9 @@ function useDebounce(value, delay) {
 你刚才做的事情就是：把"我希望你每次都这样回答"写成了一个可复用的指令文件。Claude 会在合适的时机自动加载它。
 
 接下来我们用同样的方式，构建一个更复杂的 code-review Skill——它不只是改变回答风格，还会调用工具、读取文件、执行多步检查。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

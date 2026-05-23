@@ -76,3 +76,9 @@ Skill 这个领域还在快速演进，本书基于的 Claude Code 版本和 SDK
 写 Skill 跟写代码不太一样。代码追求严谨、消除歧义、把每种边界情况都列清楚。Skill 追求的是"让 AI 理解为什么"——很多时候，加上一段解释为什么这样做的话，比写 50 条 MUST 都管用。这件事书里会反复出现，因为它是这个领域最反直觉、也最重要的一条经验。
 
 往下读，先从那个五人团队的故事开始。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

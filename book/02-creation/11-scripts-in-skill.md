@@ -146,3 +146,9 @@ try {
 ```
 
 和 v5 相比，多了 `scripts/` 目录。Skill 从"一份提示词"进化成了"提示词 + 规则库 + 脚本"的组合体。AI 负责理解和判断，脚本负责精确和稳定，各司其职。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

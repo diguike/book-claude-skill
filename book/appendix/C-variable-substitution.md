@@ -49,3 +49,9 @@ allowed-tools: "Bash(gh pr *)"
 - 参数为空时，`$0` 会被替换为空字符串，不会报错
 - `${CLAUDE_SKILL_DIR}` 始终是绝对路径，适合在脚本调用中使用
 - 动态注入命令 `` !`command` `` 中也可以使用这些变量
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

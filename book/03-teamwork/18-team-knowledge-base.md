@@ -172,3 +172,9 @@ AI 在审查代码时，会读取这些文件，理解团队的上下文，然�
 分开放，分开维护。规则相对稳定，知识库随项目演进不断更新。一个月改一次规则算正常，但知识库可能每周都会有新内容加进来——踩了一个新坑、做了一个新的架构决策、发现了一个第三方库的 bug。
 
 把知识库的更新纳入日常开发流程。踩坑了？修完 bug 之后，花 2 分钟在 known-pitfalls.md 加一条记录。做了技术选型？在 architecture-decisions.md 补一条 ADR。这不是额外工作，是让团队的集体经验不再只存在于某个人的脑子里。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

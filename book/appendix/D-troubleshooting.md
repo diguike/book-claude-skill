@@ -34,3 +34,9 @@
 | 不同成员看到的 Skill 不同 | Skill 放在个人目录而非项目目录 | 将 Skill 从 `~/.claude/skills/` 移到 `.claude/skills/` 并提交到 repo |
 | 合并后 Skill 失效 | Git 合并冲突损坏了 SKILL.md | 1. 检查 SKILL.md 的 frontmatter 格式<br>2. 确认 `---` 分隔符完整<br>3. 运行 validate 脚本 |
 | eval 本地通过但 CI 失败 | 环境差异 | 1. 检查 CI 的 Node/Python 版本<br>2. 确认 `gh` CLI 是否安装<br>3. 检查脚本的依赖 |
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

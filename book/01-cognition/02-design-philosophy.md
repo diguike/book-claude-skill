@@ -175,3 +175,9 @@ skill-creator 在这一点上用了一个很准确的词——"pushy"：
 skill-creator 是这些原则最好的注脚。它是一个"创建 Skill 的 Skill"，自己就是自己的产物。它的 SKILL.md 不用全大写，解释每条指令的工程理由，正文控制在 500 行以内但通过引用文件支撑完整流程，持续在迭代中删减不起作用的指令。它不是在教你六条抽象原则，它是在用自己的存在证明这些原则确实管用。
 
 下一章我们进入动手环节——从零开始写一个能跑的 Skill。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

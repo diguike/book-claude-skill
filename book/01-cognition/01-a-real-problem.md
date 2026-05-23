@@ -297,3 +297,9 @@ Skill 不是插件——它不需要运行时加载机制。Skill 不是 SDK—�
 每一章都有可运行的代码，每一个实践都来自真实项目。翻完这本书，你应该能独立构建和维护生产级的 AI Skill。
 
 开始吧。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

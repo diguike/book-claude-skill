@@ -253,3 +253,9 @@ allowed-tools: "Read Grep Glob"
 > **"一个规则文件 2000 行"**
 >
 > 规则文件本身也要按子主题拆分。如果 `security.md` 膨胀到了 2000 行，拆成 `security-xss.md`、`security-injection.md`、`security-auth.md`。判断标准和第 9 章一样——超过 200 行就该考虑拆了。插件化的意义就在于拆分成本极低：拆文件、改路由，完事。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

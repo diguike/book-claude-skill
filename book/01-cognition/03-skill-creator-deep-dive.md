@@ -137,3 +137,9 @@ comparator 用盲比解决这个问题——两个输出匿名呈现，顺序随
 10. **立即捕获一次性数据**——任何只出现一次的信息（timing、中间状态、临时通知），要么当场记录，要么永远丢失。
 
 这 10 条不是从理论推导出来的，是从 skill-creator 的实际架构中逆向提炼的。每一条背后都有一个"不这样做就会踩坑"的真实故事。后面的章节会反复引用它们。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

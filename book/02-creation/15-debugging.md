@@ -124,3 +124,9 @@ Skill 在运行时会依赖外部资源——脚本执行、子代理调用、�
 | 子代理结果为空 | 传参不足 | 检查 $ARGUMENTS 是否包含必要信息 |
 
 调试 Skill 和调试代码一个道理：先复现，再定位，最后修复。别跳过前两步直接改 prompt——那叫碰运气，不叫调试。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

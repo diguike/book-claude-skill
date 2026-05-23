@@ -319,3 +319,9 @@ HTML 注释不会影响 AI 的理解，但给维护者提供了变更历史的�
 如果你的 Skill 只有自己在用、没有脚本依赖、输出只给人看不给机器解析——那不用管版本，直接改就是了。版本管理的成本只在有下游依赖时才值得付出。
 
 权限越大，审查越严，分发范围越广，责任越大。这不是什么新道理，就是最小权限原则在 Skill 管理中的体现。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

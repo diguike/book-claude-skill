@@ -188,3 +188,9 @@ description: "Use this skill whenever the user mentions anything about code qual
 看起来覆盖面很广，实际效果很差。因为太多不相关的查询都会触发它——用户问怎么写测试，触发了你的 code-review Skill；用户想 debug，也触发了。AI 加载了一堆审查指令去做调试的事，输出反而更差。
 
 **description 的目标是精准，不是广泛。** 宁可列 10 个具体的触发短语，也不要写一句模糊的万能描述。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

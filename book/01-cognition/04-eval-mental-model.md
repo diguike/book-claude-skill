@@ -122,3 +122,9 @@ AI 本来就擅长写 commit message，你的 Skill 几乎没带来增量。这�
 **我这一步改动，delta 是多少？**
 
 能回答这个问题，你写出来的 Skill 就不会是"自我感觉良好"的产物。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

@@ -173,3 +173,9 @@ body 中新增的部分：
 一个常见的错误做法是把 AI 的完整审查输出都存进日志。一次审查输出可能几千字，20 次就是几万字，日志文件几天就膨胀到解析困难。
 
 review-metrics.jsonl 只记结构化摘要——数字、评分、命中的规则。需要回看某次审查的完整输出，去 git log 或者 PR 的评论区找。日志文件的职责是提供可计算的指标，不是做归档。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

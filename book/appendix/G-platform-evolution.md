@@ -73,3 +73,9 @@ model: claude-sonnet-4-20250514
 **什么时候不锁：** 大部分情况。如果你的 Skill 输出是给人看的（代码审查意见、解释文档、技术方案），不锁模型可以自动享受升级带来的质量提升——更好的推理、更准的判断、更自然的表达。锁了反而是给自己设上限。
 
 经验法则：**有脚本解析输出的 → 锁。给人看的 → 不锁。** 拿不准的先不锁，等出问题了再锁也不迟。
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

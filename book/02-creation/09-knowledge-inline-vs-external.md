@@ -189,3 +189,9 @@ allowed-tools: "Read Grep Glob"
 > **"把整个 React 官方文档塞进 SKILL.md"**
 >
 > 见过有人把 React 文档的 hooks 章节、并发模式章节、服务端组件章节全部复制进 SKILL.md。上下文窗口是有限的，核心指令会被海量参考信息稀释。AI 读了 2000 行的 React 知识后，反而记不住你在第 3 行写的"空 catch 块是 critical"。核心指令要精简、要突出，参考知识按需加载。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

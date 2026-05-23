@@ -302,3 +302,9 @@ python scripts/generate_review.py \
 没有自动化评测的 Skill，就像没有自动化测试的代码。刚开始写的时候觉得"我心里有数"，三个月后就是一坨不敢动的东西。
 
 你团队的第一个 CI eval 不需要很完善。从最关键的那一两个 Skill 开始，跑起来再逐步完善。等团队尝到甜头——某次 PR 的 CI 评论提示"pass_rate 退化了 0.12"，reviewer 一看，果然是新规则和旧规则冲突了——以后就没人会质疑"这玩意有必要吗"。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

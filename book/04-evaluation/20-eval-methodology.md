@@ -279,3 +279,9 @@ LLM 给出的建议不一定全对，但它能帮你快速定位方向。改完�
 四个测试用例，覆盖四种典型场景：简单函数、复杂 PR、安全漏洞、React 组件。每个用例 3-4 条断言，总共 14 条。
 
 注意第三条断言的写法——"不误报"也是一种断言。你不仅要测 AI 能找到问题，还要测它不会无中生有。一个把所有代码都标红的 linter 没有价值。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

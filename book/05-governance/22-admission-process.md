@@ -164,3 +164,9 @@ PR review 的时候同时完成安全审查和质量检查。灰度阶段可以�
 - Day 14：正式标记为 stable
 
 两周，一个人的业余时间。流程不重，但该有的都有了。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

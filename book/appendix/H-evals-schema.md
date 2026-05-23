@@ -124,3 +124,9 @@
 | `benchmark.json` | 聚合统计（pass_rate、平均分） | 多轮评测后汇总 |
 | `timing.json` | 每条 eval 的执行耗时 | 评测完成后自动生成 |
 | `feedback.json` | 人工反馈与修正 | 手动填写 |
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

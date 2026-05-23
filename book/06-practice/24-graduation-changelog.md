@@ -153,3 +153,9 @@ Claude 拿到 JSON 后负责格式化成 Markdown。职责分离：脚本负责�
 - 配置 hooks 实现自动化后处理
 
 下一步？把它放到你的真实项目里用起来。按第 22 章的流程走一遍——个人试用一周，写 eval，提 PR，让同事试用。这就是从"学会了"到"用起来"的最后一步。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

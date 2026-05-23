@@ -74,3 +74,9 @@ Claude 会按照你在 SKILL.md 中定义的规则来回答——先概括、再
 - 想给 Skill 加脚本 → 第 11 章
 - 想把 Skill 分享给团队 → 第 23 章
 - 想了解全书结构 → 目录页
+
+---
+
+> 本附录来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)

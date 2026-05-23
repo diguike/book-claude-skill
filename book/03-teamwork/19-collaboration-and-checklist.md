@@ -162,3 +162,9 @@ echo "PASS: basic validation passed"
 **10 人以上的团队**：考虑加入 Skill 的变更日志（CHANGELOG.md），大变更发团队公告，新人入职时安排 Skill 知识库的 onboarding。
 
 流程是为了减少摩擦，不是制造摩擦。如果你的团队只有三个人，搞一套复杂的审批流程只会让大家懒得改 Skill，最后 Skill 就烂在那里了。
+
+---
+
+> 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
+> 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
+> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)
