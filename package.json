@@ -1,0 +1,17 @@
+{
+  "name": "skill-guide",
+  "private": true,
+  "description": "AI Skill 实战权威指南 - 配套代码",
+  "type": "module",
+  "scripts": {
+    "collect-metrics": "tsx skills/code-review/scripts/collect-metrics.ts",
+    "append-log": "tsx skills/code-review/scripts/append-log.ts",
+    "score": "tsx skills/code-review/scripts/score.ts",
+    "trend-report": "tsx skills/code-review/scripts/trend-report.ts",
+    "parse-commits": "tsx examples/ch24-graduation/changelog-generator/scripts/parse-commits.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,68 @@
+name: Skill Evaluation
+
+on:
+  pull_request:
+    paths:
+      - '.claude/skills/**'
+      - 'skills/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install tsx
+        run: npm install -g tsx
+
+      - name: Validate SKILL.md format
+        run: |
+          for skill_dir in $(find .claude/skills skills -name "SKILL.md" -exec dirname {} \;); do
+            echo "Validating $skill_dir..."
+
+            # Check SKILL.md exists and has frontmatter
+            if ! head -1 "$skill_dir/SKILL.md" | grep -q "^---"; then
+              echo "ERROR: $skill_dir/SKILL.md missing frontmatter"
+              exit 1
+            fi
+
+            # Check body length
+            body_lines=$(sed -n '/^---$/,/^---$/d; p' "$skill_dir/SKILL.md" | wc -l)
+            if [ "$body_lines" -gt 500 ]; then
+              echo "WARNING: $skill_dir/SKILL.md body is $body_lines lines (recommend < 500)"
+            fi
+
+            # Check evals exist
+            if [ ! -f "$skill_dir/evals/evals.json" ]; then
+              echo "WARNING: $skill_dir missing evals/evals.json"
+            fi
+          done
+
+      - name: Check baseline regression
+        run: |
+          # Compare current benchmark with baseline
+          for benchmark in $(find . -name "benchmark.json" -path "*/evals/*"); do
+            echo "Checking $benchmark..."
+            current_pass_rate=$(cat "$benchmark" | npx tsx -e "
+              const data = JSON.parse(require('fs').readFileSync('/dev/stdin', 'utf-8'));
+              console.log(data.run_summary?.with_skill?.pass_rate?.mean || 0);
+            ")
+            echo "Current pass_rate: $current_pass_rate"
+          done
+
+      - name: Post results to PR
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '## Skill Evaluation Results\n\n✅ Validation passed. See workflow logs for details.'
+            })

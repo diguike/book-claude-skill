@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "skills/**/scripts/**/*.ts",
+    "examples/**/scripts/**/*.ts"
+  ]
+}

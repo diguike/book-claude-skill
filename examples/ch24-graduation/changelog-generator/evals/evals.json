@@ -1,0 +1,64 @@
+[
+  {
+    "name": "basic-feature-changelog",
+    "description": "Generate changelog from commits with simple feat and fix types",
+    "steps": [
+      {
+        "type": "prompt",
+        "content": "Generate a changelog for the last 5 commits. The git log contains:\n- feat(auth): add login with Google (#42)\n- fix(ui): button alignment on mobile (#38)\n- chore: update dependencies\n- feat(api): add pagination to /users endpoint (#45)\n- test: add unit tests for auth module"
+      }
+    ],
+    "expected": {
+      "contains": [
+        "### Features",
+        "**auth**: add login with Google (#42)",
+        "**api**: add pagination to /users endpoint (#45)",
+        "### Bug Fixes",
+        "**ui**: button alignment on mobile (#38)"
+      ],
+      "not_contains": [
+        "update dependencies",
+        "add unit tests"
+      ]
+    }
+  },
+  {
+    "name": "breaking-change-detection",
+    "description": "Correctly identify and categorize breaking changes",
+    "steps": [
+      {
+        "type": "prompt",
+        "content": "Generate a changelog. The git log contains:\n- feat!: remove v1 API endpoints (#50)\n- feat(auth): add refresh token support (#51)\n- fix(db): connection pool leak\n\nThe first commit body contains: BREAKING CHANGE: All /api/v1/* endpoints are removed. Migrate to /api/v2/*."
+      }
+    ],
+    "expected": {
+      "contains": [
+        "### Breaking Changes",
+        "remove v1 API endpoints (#50)",
+        "### Features",
+        "**auth**: add refresh token support (#51)",
+        "### Bug Fixes",
+        "**db**: connection pool leak"
+      ]
+    }
+  },
+  {
+    "name": "no-meaningful-commits",
+    "description": "Handle case where all commits are chore/ci/test",
+    "steps": [
+      {
+        "type": "prompt",
+        "content": "Generate a changelog. The git log contains:\n- chore: update eslint config\n- ci: fix GitHub Actions workflow\n- test: increase coverage for utils\n- style: format with prettier"
+      }
+    ],
+    "expected": {
+      "contains": [
+        "No changes to document"
+      ],
+      "not_contains": [
+        "### Features",
+        "### Bug Fixes"
+      ]
+    }
+  }
+]

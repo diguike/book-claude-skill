@@ -1,0 +1,47 @@
+{
+  "skill_name": "code-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我 review 一下这个函数：\n\nasync function getUser(id) {\n  const res = await fetch(`/api/users/${id}`);\n  const data = res.json();\n  return data.name;\n}",
+      "expected_output": "应识别出至少 2 个问题：缺少 await（res.json()）和缺少错误处理",
+      "assertions": [
+        { "text": "指出 res.json() 缺少 await", "passed": null, "evidence": "" },
+        { "text": "指出缺少 try-catch 或错误处理", "passed": null, "evidence": "" },
+        { "text": "输出包含严重度标记（🔴/🟡/🔵）", "passed": null, "evidence": "" },
+        { "text": "输出包含评分", "passed": null, "evidence": "" }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "检查这段 React 代码有没有问题：\n\nfunction UserList({ users }) {\n  const [filtered, setFiltered] = useState(users);\n  useEffect(() => {\n    setFiltered(users.filter(u => u.active));\n  });\n  return filtered.map((u, i) => <div key={i}>{u.name}</div>);\n}",
+      "expected_output": "应识别出：useEffect 缺少依赖数组导致无限循环、key 不应用 index、filtered 应该是派生状态而非独立 state",
+      "assertions": [
+        { "text": "指出 useEffect 缺少依赖数组", "passed": null, "evidence": "" },
+        { "text": "指出 key={i} 不应使用 index", "passed": null, "evidence": "" },
+        { "text": "建议 filtered 用 useMemo 派生而非独立 state", "passed": null, "evidence": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "审查这段代码的安全性：\n\napp.get('/search', (req, res) => {\n  const query = req.query.q;\n  const results = db.query(`SELECT * FROM products WHERE name LIKE '%${query}%'`);\n  res.send(`<h1>搜索结果：${query}</h1><div>${results}</div>`);\n});",
+      "expected_output": "应识别出 SQL 注入和 XSS 两个 Critical 级别安全漏洞",
+      "assertions": [
+        { "text": "识别出 SQL 注入漏洞并标记为 Critical", "passed": null, "evidence": "" },
+        { "text": "识别出 XSS 漏洞（用户输入直接插入 HTML）", "passed": null, "evidence": "" },
+        { "text": "给出参数化查询的修复建议", "passed": null, "evidence": "" },
+        { "text": "给出 XSS 防护建议（转义或使用模板引擎）", "passed": null, "evidence": "" }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "帮我看看这个组件有没有性能问题：\n\nfunction Dashboard({ data }) {\n  const [sortedData, setSortedData] = useState([]);\n  useEffect(() => {\n    setSortedData([...data].sort((a, b) => b.value - a.value));\n  }, [data]);\n  return (\n    <div>\n      {sortedData.map(item => (\n        <Card\n          key={item.id}\n          data={item}\n          style={{ padding: 16 }}\n          onClick={() => console.log(item)}\n        />\n      ))}\n    </div>\n  );\n}",
+      "expected_output": "应识别：sortedData 应该用 useMemo 而非 state+effect、内联 style 对象导致不必要重渲染、内联 onClick 函数导致不必要重渲染",
+      "assertions": [
+        { "text": "指出排序应使用 useMemo 而非 useState + useEffect", "passed": null, "evidence": "" },
+        { "text": "指出内联 style 对象会导致不必要的重渲染", "passed": null, "evidence": "" },
+        { "text": "提到 console.log 不应出现在生产代码中", "passed": null, "evidence": "" }
+      ]
+    }
+  ]
+}

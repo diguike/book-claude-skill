@@ -1,0 +1,13 @@
+{
+  "skill_name": "my-skill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "用户的自然语言请求",
+      "expected_output": "期望的输出描述",
+      "assertions": [
+        { "text": "具体的、可验证的断言", "passed": null, "evidence": "" }
+      ]
+    }
+  ]
+}

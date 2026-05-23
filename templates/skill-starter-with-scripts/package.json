@@ -1,0 +1,12 @@
+{
+  "name": "my-skill-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "example": "tsx scripts/example.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

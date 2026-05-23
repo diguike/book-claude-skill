@@ -1,0 +1,27 @@
+{
+  "description": "Trigger optimization test set for code-review skill",
+  "should_trigger": [
+    { "query": "帮我看看这个 PR 有什么问题", "note": "口语化的 review 请求" },
+    { "query": "review 一下这个文件的代码", "note": "中英混合" },
+    { "query": "这段代码写得怎么样？有没有 bug？", "note": "隐式 review 请求" },
+    { "query": "帮忙检查一下 src/auth.ts 有没有安全漏洞", "note": "安全维度 review" },
+    { "query": "看下这个组件的性能有没有问题", "note": "性能维度 review" },
+    { "query": "我提了个 MR，帮忙过一下代码", "note": "GitLab 用语 MR" },
+    { "query": "这个函数写得太复杂了，帮我看看怎么改", "note": "重构请求隐含 review" },
+    { "query": "code review #1234", "note": "直接命令 + PR 编号" },
+    { "query": "帮我审查一下这几个文件的改动", "note": "审查 = review" },
+    { "query": "看看这个 diff 有没有不合理的地方", "note": "diff review" }
+  ],
+  "should_not_trigger": [
+    { "query": "帮我写一个用户登录的接口", "note": "写代码，不是 review" },
+    { "query": "解释一下这段代码是干什么的", "note": "explain-code skill 的范围" },
+    { "query": "帮我修复这个 bug", "note": "fix 请求，不是 review" },
+    { "query": "把这个函数重构一下", "note": "直接重构，不是 review" },
+    { "query": "帮我写单元测试", "note": "写测试" },
+    { "query": "今天天气怎么样", "note": "无关对话" },
+    { "query": "帮我部署到生产环境", "note": "运维操作" },
+    { "query": "生成一个 commit message", "note": "commit-message skill 的范围" },
+    { "query": "把这个文件翻译成英文", "note": "翻译任务" },
+    { "query": "帮我创建一个新的 React 项目", "note": "项目脚手架" }
+  ]
+}
