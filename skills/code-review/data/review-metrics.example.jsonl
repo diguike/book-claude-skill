@@ -1,0 +1,5 @@
+{"timestamp":"2025-03-10T09:15:00Z","pr":"423","total":5,"critical":1,"warning":3,"suggestion":1,"filesReviewed":4,"score":6,"rulesHit":["base","security","react"],"selfScore":{"coverage":0.8,"accuracy":0.85,"depth":0.6}}
+{"timestamp":"2025-03-11T14:30:00Z","pr":"425","total":3,"critical":0,"warning":2,"suggestion":1,"filesReviewed":2,"score":8,"rulesHit":["base","react"],"selfScore":{"coverage":1.0,"accuracy":0.9,"depth":0.7}}
+{"timestamp":"2025-03-12T10:00:00Z","pr":"428","total":8,"critical":2,"warning":4,"suggestion":2,"filesReviewed":7,"score":5,"rulesHit":["base","security","react","css-layout"],"selfScore":{"coverage":0.7,"accuracy":0.8,"depth":0.8}}
+{"timestamp":"2025-03-13T16:45:00Z","pr":"430","total":2,"critical":0,"warning":1,"suggestion":1,"filesReviewed":3,"score":9,"rulesHit":["base"],"selfScore":{"coverage":1.0,"accuracy":0.95,"depth":0.5}}
+{"timestamp":"2025-03-14T11:20:00Z","pr":"432","total":6,"critical":1,"warning":3,"suggestion":2,"filesReviewed":5,"score":7,"rulesHit":["base","security","multi-platform","i18n"],"selfScore":{"coverage":0.9,"accuracy":0.85,"depth":0.75}}
