@@ -1,11 +1,11 @@
 ---
 title: 前言
-feishu_url: ""
-last_synced: ""
+feishu_url: "https://fivwvysqdz.feishu.cn/docx/AQ41dIItUoIRs4xTzs3chdDAnpZ"
+last_synced: "2026-06-03T14:13:32Z"
 ---
 
 > **配套资源**  
-> 源码仓库 · [github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)  
+> 源码仓库 · [github.com/diguike/skill-guide](https://github.com/diguike/skill-guide)  
 > 在线阅读 · [inferloop.dev/claude-skill](https://inferloop.dev/claude-skill)
 
 ## 一个团队的真实困境
@@ -51,25 +51,43 @@ Skill 是一种把"知识 + 执行规则"打包成 AI 能理解的模块的方�
 
 全书围绕一个真实案例展开：把"代码评审"这件事，从一份死文档，一步步打磨成一个生产级的 Skill。每章对应一个版本的演进，仓库里的 `skills/code-review-snapshots/` 保留了每个阶段的完整代码。
 
-六个部分按"认知 → 创造 → 协作 → 评估 → 治理 → 实战"的顺序展开：
+二十八章按这个工程时间线展开：
 
-**第一部分 认知篇**——理解 Skill 是什么、为什么这种形态可行、它和 Prompt、Agent、Plugin 的区别在哪。如果你对 Skill 还停留在"听过没用过"的阶段，从这里开始。
+**第 1-3 章 认知**——理解 Skill 是什么、为什么这种形态可行、它和 MCP、Plugin、Agent 的区别在哪。如果你对 Skill 还停留在"听过没用过"的阶段，从这里开始。
 
-**第二部分 创造篇**——从最小可用的 10 行 SKILL.md 开始，一步步加上结构化输出、动态上下文、外置知识、插件化规则。这部分是全书的核心，对应案例的 v1 到 v5。
+**第 4-15 章 创造**——从最小可用的 10 行 SKILL.md 开始，一步步加上结构化输出、动态上下文、外置知识、插件化规则、脚本、日志、hooks、子代理。这部分是全书最厚的部分，对应案例的 v1 到 v9。
 
-**第三部分 协作篇**——Skill 在团队里怎么共享、怎么版本管理、怎么避免互相冲突。这部分讲的是工程化，对个人开发者可以略读。
+**第 16-18 章 协作**——Skill 在团队里怎么共享、怎么版本管理、怎么避免互相冲突。这部分讲的是工程化，对个人开发者可以略读。
 
-**第四部分 评估篇**——一个 Skill 好不好用，凭直觉判断不够。这部分介绍 eval 的方法论，让 Skill 的质量可量化。
+**第 19-20 章 评测**——一个 Skill 好不好用，凭直觉判断不够。这两章把 evals.json、CI 流水线、grader/comparator/analyzer 三角色端到端打通，让 Skill 的质量可量化。
 
-**第五部分 治理篇**——大规模使用 Skill 之后会出现的问题：权限、审计、安全边界、回滚机制。属于"做大之后才会遇到"的话题，前期可跳过。
+**第 21-22 章 治理**——大规模使用 Skill 之后会出现的问题：准入流程、权限、安全边界、退役机制。
 
-**第六部分 实战篇**——把前五部分的内容综合应用到几个完整的场景：前端项目的全流程 review、后端 API 的安全审计、文档生成 Skill。
+**第 23-25 章 规模化与分发**——Skill 数量到万级时怎么动态召回（Skill Hub + Tool RAG）、Skill 的版本演进灰度回退、用 Plugin 把 Skill 分发到团队和外部。这三章是第二版新增的内容，对应这个领域过去一年最重要的工程演进。
 
-附录里有 5 分钟快速入门、常见模式速查、跟 Claude Code 官方 skill-creator 的对照表。
+**第 26-28 章 实战**——把前面所有章节的内容综合应用到三个完整案例上：前端项目全流程 review、后端 API 安全审计、毕业项目自定义 Skill。
+
+写 SKILL.md 时常翻附录的速查表——所有 frontmatter 字段、settings 项、替换变量一张表。
 
 ## 关于代码版本
 
-Skill 这个领域还在快速演进，本书基于的 Claude Code 版本和 SDK 接口可能在书出版后已经更新。原理不会变——一个 AI 能理解的可执行知识包，这件事的本质是稳定的。具体 API 的差异请以官方文档为准，仓库会跟进维护。
+Skill 这个领域还在快速演进。本书第二版基于 2026 年 6 月的 Claude Code 状态和 Agent Skills 规范。一些字段（`paths`、`when_to_use`、`shell` 等）需要 Claude Code 2.1.x 或更新版本。原理不会变——一个 AI 能理解的可执行知识包，这件事的本质是稳定的。具体 API 的差异请以官方文档为准，仓库会跟进维护。
+
+## 关于第二版
+
+第二版的主要变化：
+
+- **去掉了"一级目录"分组**，所有章节扁平编号。GitHub / 飞书一眼可见全书目录
+- **评测从 3 章合并为 1 章**：去掉空泛的方法论叙述，围绕真实场景从 evals.json 写到 CI 流水线
+- **新增第 3 章 Skill vs MCP vs Plugin vs Agent**：每个考虑用 Skill 的工程师都会问的边界问题
+- **新增第 23 章 动态 Skill 召回**：当 Skill 数量到万级时，怎么用 Tool RAG 让 AI 在毫秒内找到对的那几个
+- **新增第 24 章 Skill 更新与回退**：版本演进、灰度发布、live change detection、auto-compaction 等工程纪律
+- **新增第 25 章 用 Plugin 分发 Skill**：把 Skill 装进 plugin，通过 marketplace 给团队和外部分发
+- **新增第 26-27 章实战**：前端全流程 review、后端 API 安全审计两个完整的 90 天工程时间线
+- **附录全面合并**：原来 9 个附录精简到 1 个速查表，其他内容内联到对应章节
+- **第 4 章合并**：5 分钟入门 + 运行前提 + 结构配置，新读者一章入门
+
+第一版有写得不错的，也有今天回头看明显欠写或欠思考的。第二版尽量在每个被读者反馈过的点上做出改进。但写书这件事永远没"完成"，只有"暂停"——如果你读完发现哪一章应该再深、哪一章可以再短，欢迎提 issue 到 [github.com/diguike/skill-guide](https://github.com/diguike/skill-guide)。
 
 ## 一点提醒
 
@@ -81,4 +99,4 @@ Skill 这个领域还在快速演进，本书基于的 Claude Code 版本和 SDK
 
 > 本章来自《Claude Code Skill 指南》开源版 · 作者「递归客」  
 > 在线阅读完整书系：[inferloop.dev](https://inferloop.dev)  
-> 源码仓库：[github.com/diguike/book-claude-skill](https://github.com/diguike/book-claude-skill)
+> 源码仓库：[github.com/diguike/skill-guide](https://github.com/diguike/skill-guide)
